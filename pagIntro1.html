@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> La importancia de saber impartir clase </title>
+</head>
+
+<div id="titulo" class="titulo">
+<div style="color:white;width:100%;border:3px solid gray;background:#474B4E"/>
+<h1> <b> La importancia de saber dar una clase </b> </h1>
+<h2> <i> Arquitectura de Computadores I </i> </h2>
+</div>
+
+<body>
+	<div id="sidebar" class="sidebar" style="width:0px;height: 800px">
+	<a class="boton-cerrar" onclick="ocultar()">x</a>
+	<p> <a onclick="ocultar()" <b> MENÚ </b> </a> </p>
+	<ul class="menu">
+	<li><a href="pagIntro1.html"> <b> Introducción  </b> </a></li>
+	<li><a href="pagPrimeraParte.html"> <b> Primera Parte </b> </a></li>
+	<li><a href="pagSegundaParte.html"> <b> Segunda Parte </b> </a></li>
+	<li><a href="pagConclusiones.html"> <b> Conclusiones </b> </a></li>
+	</ul>
+	</div>
+
+	<script>
+	function mostrar() {
+		document.getElementById("sidebar").style.width = "300px";
+		document.getElementById("sidebar").style.length = "800px";
+		document.getElementById("contenido").style.marginLeft = "300px";
+		document.getElementById("abrir").style.display = "none";
+		document.getElementById("cerrar").style.display = "inline";
+	}
+
+	function ocultar() {
+		document.getElementById("sidebar").style.width = "0";
+		document.getElementById("sidebar").style.height = "800px";
+		document.getElementById("contenido").style.marginLeft = "0";
+		document.getElementById("abrir").style.display = "inline";
+		document.getElementById("cerrar").style.display = "none";
+	}
+	</script>
+	
+	<div id="boton" class="boton">
+	<a id="abrir" class="abrir-cerrar" onclick="mostrar()" style="display: inline;"><img src="https://cdn.pixabay.com/photo/2017/11/07/07/06/menu-2925825_960_720.png" width="100" height="100"/></a>
+	</div>
+	<p></p>
+	<div id="fotos tecnun" class="tecnun">
+	<img src="Imagenes\ibaeta.jpeg"" width="350" height="350" title="Tecnun-Ibaeta"/>
+	<img src="Imagenes\Miramon.jpeg" width="350" height="350" title="Tecnun-Miramon"/>
+	</div>
+	
+	<p> En las charlas y las explicaciones el contenido que se da tiene un papel fundamental a la hora de que la clase sea interesante y útil, pero no por ello la forma de darla queda relevada a un segundo plano. Por ello vamos a intentar exponer las acciones que nos parecen adecuadas y otras que no tanto para que los alumnos estén satisfechos con la asignatura, por eso para ese propósito no vemos mejor manera que explicando una asignatura que hemos cursado en Tecnun- Universidad de Navarra, Arquitectura de computadores I. </p>
+
+	<div id="lista_profes" class="lista_profes">
+		<p> <a href="https://www.yuemin.cc/"> <i> Yuemin Ding </i> </a> </p> 
+		<p> <a href="https://es.linkedin.com/in/cbuchart/es"> <i> Carlos Buchart Izaguirre </i> </a> </p>
+	</div>
+		<img src="Imagenes\saladeordenadores.jpg" height="350" width="600"/>
+		<p> Esta asignatura se cursaba en el 3er curso del gado Ingeniería en sistemas de telecomunicaciones, con el plan de estudios 2016, plan de estudios que se cambió en el 2020 y que cambió con ello los contenidos de esta materia.  </p>
+		<p> Empezó con un muy buen potencial, ya que el contenido que se impartía era muy interesante para la carrera, pero acabó decepcionando a la mayoría del alumnado por una mala realización.  </p>
+		<p> El primer problema fue que la asignatura estaba dividida en dos apartados muy diferenciadas entre sí, con profesores muy distintos, la primera centrada en el hardware puro de los ordenadores y la segunda sobre el software de los sistemas operativos. Esto en muchos casos no suele ser un gran inconveniente, pero las dos partes no estaban nada cohesionadas, por lo que eran dos temarios totalmente distintos y opuestos, aunque luego se evaluasen al mismo tiempo. </p>
+		<p> Como hemos mencionado este fue uno de los problemas, por ello vamos a separar la explicación en dos partes correspondientes a cada sección de la asignatura </p>
+	
+	<hr> </hr>
+	<hr> </hr>
+	
+	<div id="bottom_text" class="bottom_text">
+		<p> Aquí adjuntamos las distintas redes sociales de la Escuela Superior de Ingenieros - Tecnun: </p>
+	</div>
+	
+	<div id="redes_sociales" class="redes_sociales">
+	<table>
+	<tr>
+	<a href="https://www.instagram.com/tecnun/?hl=es"><img src="https://www.pngmart.com/files/21/Instagram-Logo-PNG-Image.png" width="200" height="200" id="instagram"/></a>
+	</tr>
+	<tr>
+	<a href="https://twitter.com/tecnun?lang=es"><img src="https://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c53e.png" width="200" height="200" id="twitter"/> </a>
+	</tr>
+	<tr>
+	<a href="https://tecnun.unav.edu"><img src="https://cmjaizkibel.com/wp-content/uploads/2019/01/logo-tecnun-transp-231x231.png" width="200" height="200" id="tecnunweb"/> </a>
+	</tr>
+	</table>
+	</div>
+	
+</body>
+</html>
+
+<style>
+
+	.titulo{
+		text-align: center;
+		font-family: "Courier New";
+	}
+	body{
+		font-size: 15;
+		font-weight: bold;
+		color: 474B4E;
+		font-family: "Times New Roman";
+		background-image: url("https://img.freepik.com/vector-gratis/fondo-geometrico_23-2148573776.jpg?w=2000");
+		background-attachment: fixed;
+	}
+	ul{
+		list-style-type: square;
+	}
+	.main_img{
+		text-align: center;
+	}
+	.boton{
+		position: fixed;
+		left: 0px;
+		top: 0px;
+		width: 200px;
+		padding: 10px;
+	}
+	.boton:hover{
+		transition: 0.2s;
+		filter: saturate(70%);
+	}
+	.bottom_text{
+		text-align: center;
+		margin: auto;
+	}
+	.sidebar {
+		position: fixed;
+		height: 35%;
+		width: 0;
+		top: 0;
+		left: 0;
+		z-index: 1;
+		background-color: #FB264A;
+		overflow-x: hidden;
+		transition: 0.4s;
+		padding: 1rem 0;
+		box-sizing:border-box;
+	}
+
+	.sidebar .boton-cerrar {
+		position: absolute;
+		top: 0.5rem;
+		right: 1rem;
+		font-size: 2rem;
+		display: block;
+		padding: 0;
+		line-height: 1.5rem;
+		margin: 0;
+		height: 32px;
+		width: 32px;
+		text-align: center;
+		vertical-align: top;
+	}
+
+	.sidebar ul, .sidebar li{
+		margin:0;
+		padding:0;
+		list-style:none inside;
+	}
+
+	.sidebar ul {
+		margin: 4rem auto;
+		display: block;
+		width: 80%;
+		min-width:200px;
+	}
+
+	.sidebar a {
+		display: circle;
+		font-size: 120%;
+		color: white;
+		text-decoration: none;
+		
+	}
+
+	.sidebar a:hover{
+		transition: 0.1s;
+		color:#ff;
+		background-color: #f90;
+
+	}
+
+	#contenido {
+		transition: margin-left .4s;
+		padding: 1rem;
+	}
+
+	.abrir-cerrar {
+		transition: .1s
+		color: #2E88C7;
+		font-size:1rem;   
+	}
+
+	#abrir {
+		
+	}
+	#cerrar {
+		display:none;
+	}
+	.lista_profes{
+		text-align: center;
+	}
+	.profes{
+		text-align: center;
+	}
+	.redes_sociales{
+		text-align: center
+	}
+	#instagram:hover{
+		transition: 0.1s;
+		filter: saturate(60%);
+	}
+	#twitter:hover{
+		transition: 0.1s;
+		filter: saturate(60%);
+	}
+	#tecnunweb:hover{
+		transition: 0.3s;
+		filter: saturate(60%);
+	}
+
+</style>
